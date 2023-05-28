@@ -1,3 +1,4 @@
+'''
 #METODOS DE LISTAS
 
 lista = [1,2,3,7, 9, 8, 10]
@@ -59,3 +60,59 @@ print("Maior elemento da lista:", max(lista)) #imprime o maior elemento da lista
 
 #min
 print("Menor elemento da lista:", min(lista)) #imprime o menor elemento da lista
+'''
+'''
+# > FUNÇÕES
+
+# > 1. CRIANDO FUNÇÕES
+
+def saudacao():
+    print("Seja bem-vinda(o)!")
+    print("Olá, é um prazer ter você fazendo parte desse curso!")
+
+saudacao()
+
+# Função com parametro
+
+def saudacao(nome,curso):
+    print(f"Seja bem-vinda(o), {nome}!")
+    print(f"Olá, é um prazer ter você fazendo parte do curso de {curso}!")
+
+saudacao("Majima","Python")
+saudacao("Kiryu","Java")
+
+# Função com parametro defaut
+
+def saudacao(nome,curso= "C++"): #Valor padrão, não obrigatorio
+    print(f"Seja bem-vinda(o), {nome}!")
+    print(f"Olá, é um prazer ter você fazendo parte do curso de {curso}!")
+
+saudacao("Majima", "Python")
+
+# Função com retorno
+def soma (num1,num2):
+    return num1 + num2 #retorna a soma de num1 e num2
+
+resultado = soma (5,7)
+print("O resultado da soma é", resultado)
+
+
+
+# > CALCULADORA (desenvolver futuramente)
+
+def calculadora(num1,num2,operação="+"):
+    if operação == "+":
+        return num1+num2
+    elif operação == "-":
+        return num1-num2
+    
+resultado= calculadora(10,20,"-")
+print(resultado)
+'''
+    
+
+
+
+
+
+
